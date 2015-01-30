@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gizii.cld.mapper.AdminMapper">
+
+ 	<insert id="add" parameterType="Admin">
+ 		insert into Admin ( username,password,userType,lastLogIn,last_IP ) 
+ 				  values ( #{username},#{password},#{userType},#{lastLogIn},#{last_IP} )
+ 	</insert>
+
+	<delete id="delete" parameterType="int">
+		delete from Admin where Id=#{Id}
+	</delete>
+	
+  	<update id="update" parameterType="Admin">
+  	 UPDATE Admin
+  	 <set>
+  	 	<if test="username != null and username != '' ">
+  	 		username=#{username},
+  	 	</if>
+  	 	
+  	 	<if test="password != null and password != '' ">
+  	 		password=#{password},
+  	 	</if>
+  	 	
+  	 	<if test="userType != null ">
+  	 		userType=#{userType},
+  	 	</if>
+  	 	
+  	 	<if test="lastLogIn != null ">
+  	 		lastLogIn=#{lastLogIn},
+  	 	</if>
+  	 	
+  	 	<if test="last_IP != null ">
+  	 		last_IP=#{last_IP} 
+  	 	</if> 
+  	 </set>
+  	 	where Id=#{Id}
+  	</update>
+
+	<select id="showById" resultType="Admin" parameterType="int">
+		select * from Admin where Id=#{Id}
+	</select>
+  	
+  	<select id="showAll" resultType="Admin">
+  		select * from Admin
+  	</select>
+  	
+  	<select id="getByName" resultType="Admin" parameterType="String">
+  		select * from Admin where username=#{username}
+  	</select>
+  	
+</mapper>
