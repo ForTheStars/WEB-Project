@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gizii.cld.mapper.EmailMapper">
+
+  	<insert id="add" parameterType="Email">
+  	INSERT INTO email (
+  						user_ID,email
+  					  )
+  		       VALUES (
+  		       			#{user_ID}，#{email}
+  		       		  )  		
+  	</insert>
+  	
+  	<delete id="delete" parameterType="int">
+  		delete from Email where Id=#{Id}
+  	</delete>
+  	
+  	<select id="getId" resultType="int" parameterType="String">
+  		select Id from Email where email=#{email}
+  	</select>
+  	
+  	<select id="getAll" resultType="Email" parameterType="int">
+  		select email from Email where #{admin.Id} in (select admin_ID from Email)
+  	</select>
+  	
+  	<update id="updata" parameterType="Email">
+  	UPDATE Email
+  	 <set>
+  		<if test="Email != null and Email != '' ">
+  			Email=#{Email} 
+  		</if>
+  	 </set>
+  		WHERE Id=#{Id}
+    </update>
+  	
+</mapper>

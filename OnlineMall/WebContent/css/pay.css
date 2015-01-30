@@ -1,0 +1,587 @@
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, form, button, dl, dt, dd, select, input, textarea {
+margin: 0;
+padding: 0
+}
+
+h3 {
+font-size: 14px;
+}
+a {
+text-decoration: none;
+outline: none;
+}
+
+a.ca-lightgrey {
+color: #898989;
+}
+
+body{
+font: 12px/1.125 Arial,Helvetica,sans-serif;
+background: rgb(245, 239, 239);
+line-height: 1.4;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+.wrapper {
+width:100%;min-width:320px;margin:0 auto;max-width:640px;
+_width: expression(((document.compatMode && document.compatMode=='CSS1Compat')? document.documentElement.clientWidth :document.body.clientWidth) < 980? '980px' :'auto');
+}
+
+.page-header {
+background-color: #ffffff;
+margin-bottom: 10px;
+border-bottom: 1px solid #ebebeb;
+}
+
+
+#totalPrice{
+	font-size:16px;
+}
+.page-header .icon {
+vertical-align: -2px;
+}
+
+.i-home {
+width: 18px;
+height: 15px;
+background-position: -195px -2px;
+}
+
+.middle-nav{
+background-color: #ff6900;
+}
+
+.middle-nav .desire {
+_padding-top: 32px;
+color: #EEEEEE;
+position: relative;
+margin-right: 30px;
+}
+
+.middle-nav .desire a {
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.delete{
+	margin-left: 1em;
+}
+
+.subBtn {
+font-size: 20px;
+line-height: 2px;
+width: 1.5em;
+height: 1.5em;
+color: rgb(255, 106, 0);
+}
+
+.addBtn {
+font-size: 20px;
+line-height: 2px;
+width: 1.5em;
+height: 1.5em;
+color: rgb(255, 106, 0);
+}
+
+.middle-nav .desire .vertical-line {
+margin: 0 30px;
+color: #d2d2d2;
+}
+
+.middle-nav .desire span {
+margin-left: 5px;
+}
+
+.middle-nav .logo {
+margin-top: 13px;
+height: 67px;
+}
+
+img {
+border: 0;
+}
+
+.middlenav-wrap {
+margin: 0 auto;
+color: rgb(137, 137, 137);
+line-height: 60px;
+height: 60px;
+position: relative;
+}
+
+.page-wrap {
+background-color: #F5F5F5;
+height:100%
+}
+
+.page-wrap .inner-wrap {
+width:100%;min-width:320px;
+margin: 0 auto;
+}
+
+.breadcrumb {
+border-left: 5px solid #FF6900;
+color: #444444;
+font-family: sans-serif;
+padding: 13px 0 15px 15px;
+}
+
+.breadcrumb a:hover{color:#ff6900;}
+
+.breadcrumb i {
+margin: 0 5px;
+}
+
+.breadcrumb span,.breadcrumb a {
+font-size: 18px;
+font-weight: bold;
+}
+
+.breadcrumb a {
+font-weight: normal;
+}
+
+a.ca-brown {
+color: #444444;
+}
+
+.order-confirm {
+margin:15px 1em 15px 1em
+}
+
+.clearfix {
+zoom: 1;
+}
+
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+
+.norm{
+	margin-right: 0.8em;
+}
+
+.unitPrice{
+	margin-right: 0.8em;
+}
+
+.order-confirm .address {
+width: 430px;
+}
+
+.fl {
+float: left;
+}
+
+.dishes-table {
+color: #434343;
+border: 1px solid #e5e5e5;
+background-color: #ffffff;
+}
+
+.standard-table {
+width: 100%;
+}
+
+.standard-table, td, tr, th {
+font-size: 12px;
+border-collapse: collapse;
+}
+
+.cc-oriange {
+color: #FF6900;
+}
+
+.standard-table th, .standard-table td {
+border-collapse: collapse;
+border: #dcdcdc solid 1px;
+vertical-align: top;
+margin: 0;
+padding: 0;
+}
+
+
+
+.dishes-table th, .dishes-table td {
+border: 0;
+}
+
+.borderradius-2 span{
+	font-size: 18px;
+}
+.borderradius-2 p{
+text-align: center;
+}
+
+.align-left {
+text-align: left;
+}
+
+.align-center {
+text-align: center;
+}
+
+.align-right {
+text-align: right;
+}
+
+.num {
+width: 1em;
+text-align: center;
+}
+.standard-table .th-inner, .standard-table .td-inner {
+padding: 6px 15px;
+}
+
+.dishes-table .th-inner, .dishes-table .td-inner {
+padding-top: 17px;
+padding-bottom: 17px;
+font-size: 14px;
+}
+
+.dishes-table .td-inner {
+background: url(http://xs01.meituan.net/waimai_web/img/order-border.png) repeat-x;
+_background: url(http://xs01.meituan.net/waimai_web/img/_order-border.png) repeat-x;
+}
+
+.dishes-table .cc-oriange .td-inner {
+background-color: #fff8ed;
+}
+
+.privilege {
+background-color: #FFFFFF;
+height: 53px;
+padding-top: 17px;
+border: 1px solid #E5E5E5;
+border-top: 0;
+}
+
+.privilege .si-input {
+margin-right: 15px;
+position: relative;
+}
+
+.privilege .pri-input {
+width: 158px;
+height: 28px;
+background-position: -271px -28px;
+border: 0;
+line-height: 28px;
+padding-left: 6px;
+padding-right: 34px;
+color: #434343;
+}
+
+.fr {
+float: right;
+}
+
+.sprite {
+background-image: url(http://xs01.meituan.net/waimai_web/img/sprite/sprite_54743832.png);
+_background-image: url(http://xs01.meituan.net/waimai_web/img/sprite/_sprite_54743832.png);
+}
+
+.privilege .tip {
+color: #434343;
+margin-right: 10px;
+line-height: 32px;
+}
+
+input, textarea {
+border:1px solid #C6C6C6;
+padding:3px;
+outline:none;
+}
+
+input, textarea, select {
+font-size: 100%;
+font-family: inherit;
+}
+
+.privilege .si-input .drop {
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+height: 34px;
+width: 34px;
+}
+
+.privilege .si-input .drop .i-triangle-dn {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -5px;
+margin-top: -3px;
+}
+
+.i-triangle-dn {
+width: 10px;
+height: 6px;
+background-position: -514px -5px;
+}
+
+.icon {
+background-image: url(http://xs01.meituan.net/waimai_web/img/sprite/icons_54743832.png);
+_background-image: url(http://xs01.meituan.net/waimai_web/img/sprite/_icons_54743832.png);
+background-repeat: no-repeat;
+image-rendering: -webkit-optimize-contrast;
+display: inline-block;
+}
+
+.privilege .select {
+position: absolute;
+display: none;
+top: 34px;
+left: 0;
+box-shadow: 0px 2px 5px #CCCCCC;
+-moz-box-shadow: 0px 2px 5px #CCCCCC;
+-webkit-box-shadow: 0px 2px 5px #CCCCCC;
+-ms-box-shadow: 0px 2px 5px #CCCCCC;
+-o-box-shadow: 0px 2px 5px #CCCCCC;
+}
+
+.dishes {
+background-color: #FFFFFF;
+border: 1px solid #DEDEDE;
+color: #434343;
+}
+
+.dishes-rap {
+padding: 0.5	em;
+}
+
+.details {
+border: 1px solid rgb(222, 222, 222);
+background-color: rgb(249, 249, 249);
+margin-top: 20px;
+position: relative;
+line-height: 3em;
+font-size: 1.2em;
+}
+
+#num{
+	position: relative;
+	bottom: 2px;
+}
+
+.address-box {
+border:1px solid #DEDEDE;
+background-color:#F9F9F9;
+margin-top:20px;
+padding:20px;
+position:relative;
+}
+
+.borderradius-2 {
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+-ms-boder-radius: 2px;
+-o-boder-radius: 2px;
+}
+
+.address-box p {
+line-height: 24px;
+font-size: 14px;
+}
+
+.order-form .leave-message {
+margin-top: 28px;
+}
+
+.address-form .field label, .order-form .field label {
+width: 80px;
+padding-top: 8px;
+float: left;
+}
+
+
+.address-form .field input, .order-form .field input {
+height:18px;
+line-height:18px;
+margin:0;
+width:291px;
+float:left;
+border:0;
+background-position:-424px -63px;
+padding-left:6px;
+padding-bottom:8px;padding-top:8px;
+}
+
+.order-form .pay-field {
+overflow: hidden;
+margin-top: 17px;
+}
+
+.order-form .pay-field label {
+padding-top: 7px;
+width: 80px;
+}
+
+.pay-option {
+padding-top: 5px;
+}
+
+.pay-option .option {
+width: 75px;
+height: 20px;
+background-position: -236px -4px;
+text-align: center;
+line-height: 20px;
+color: #434343;
+}
+
+.pay-option .selected {
+background-position: -319px -4px;
+color: #FF6900;
+_background-color: transparent;
+}
+
+.pay-option .online-pay {
+margin-left: 20px;
+}
+
+.pre-order {
+background-color: #FFF8ED;
+border-top: 1px dashed #E8E8E8;
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 11px;
+padding-left: 30px;
+vertical-align: middle;
+}
+
+.pre-order-select-time {
+margin-left: 12px;
+}
+
+
+.pre-order-tip {
+margin-left: 10px;
+}
+
+.error-flag, .error-tips {
+color: #EB6100;
+}
+
+.s-btn, .s-btn-white, .color-btn, .color-btn-white, .color-btn-dark, .sq-btn {
+background-image: url(http://xs01.meituan.net/waimai_web/img/btn/s-btn_2.png);
+_background-image: url(http://xs01.meituan.net/waimai_web/img/btn/_s-btn_2.png);
+background-position: 0 0;
+display: inline-block;
+height: 34px;
+line-height: 34px;
+color: #FFFFFF;
+padding-left: 10px;
+cursor: pointer;
+}
+
+.s-btn span.s-btn, .s-btn-white span.s-btn-white, .color-btn span.color-btn, .color-btn-white span.color-btn-white, .color-btn-dark span.color-btn-dark, .sq-btn span.sq-btn {
+display: block;
+_display: inline-block;
+}
+
+.s-btn .s-btn, .s-btn-white .s-btn-white, .color-btn .color-btn, .color-btn-white .color-btn-white, .color-btn-dark .color-btn-dark, .sq-btn .sq-btn {
+background-position: 100% 0;
+padding-right: 20px;
+padding-left: 10px;
+}
+
+.pay-area {
+padding: 20px 30px;
+padding-bottom: 22px;
+border-top: 1px dashed #E8E8E8;
+}
+
+.pay-area .price {
+font-size: 24px;
+font-weight: bold;
+position: relative;
+}
+
+.pay-area .tips {
+font-weight: bold;
+}
+
+.pay-area .float-tip, .pay-area .nodiscount-tip {
+position: absolute;
+top: -33px;
+font-size: 12px;
+background-color: #FFFFFF;
+color: #ff6900;
+white-space: nowrap;
+display: inline-block;
+padding: 3px 6px;
+font-weight: normal;
+left: -1px;
+border: 1px solid #ff6900;
+}
+
+.i-discountip {
+width: 11px;
+height: 8px;
+background-position: -446px -66px;
+}
+
+.pay-area .float-tip .icon, .pay-area .nodiscount-tip .icon {
+position: absolute;
+bottom: -8px;
+left: 23%;
+}
+
+.pay-area .nodiscount-tip .icon {
+left: 29%;
+}
+
+.hidden {
+display: none;
+}
+
+
+.new-a-back {
+position: absolute;
+top: 20px;
+left: 10px;
+height: 2.5em;
+width: 2.5em;
+}
+
+.new-a-back span{
+width: 10px;
+height: 20px;
+background: url(../images/icon/back1.png) 0 0 no-repeat;
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
